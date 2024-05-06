@@ -1,0 +1,18 @@
+.dialog {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.success {
+  background-color: forestgreen;
+}
+
+.delete {
+  background-color: darkred;
+}

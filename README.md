@@ -1,5 +1,5 @@
-- [ ] [음식 메뉴 앱](https://drive.google.com/file/d/1unOxdtFTmAMN-Ihnv5st8PBTbCzmpWGX/view)
-- [ ] [가위 바위 보](https://drive.google.com/file/d/133vW3wIghPpCeoWksTiFXCbgkdraF0pV/view)
+- [x] [음식 메뉴 앱](https://drive.google.com/file/d/1unOxdtFTmAMN-Ihnv5st8PBTbCzmpWGX/view)
+- [x] [가위 바위 보](https://drive.google.com/file/d/133vW3wIghPpCeoWksTiFXCbgkdraF0pV/view)
 - [ ] [퀴즈 앱](https://drive.google.com/file/d/1iDUcGAkxgP5lrroJbC365viLZokHKhk8/view)
 - [ ] [책 리스트 앱](https://drive.google.com/file/d/1xsH6RU_0EPrTFS9BfCfx1Q3e5H2Z3ELL/view)
 - [ ] [Github Finder](https://drive.google.com/file/d/1iTxhfrL0AZ1p560K2gaHlEn_1gz7ZFZF/view)
@@ -8,7 +8,7 @@
 
   ***
 
-- [ ] [예산 계산기 앱](https://drive.google.com/file/d/1jAYF8HK6bJgkTOdwd-gTbkWRJWrUIbAf/view)
+- [x] [예산 계산기 앱](https://drive.google.com/file/d/1jAYF8HK6bJgkTOdwd-gTbkWRJWrUIbAf/view)
 - [ ] [디즈니 플러스 앱](https://drive.google.com/file/d/19gmp5BoFMXlbxIitvtNgTNGqsGdQl5ra/view)
 - [ ] [포켓몬 도감 앱](https://drive.google.com/file/d/18L1GZtyHo6m6UJEYmFSkofupSNqbHQav/view)
 - [ ] [퀴즈 앱](https://drive.google.com/file/d/1toh00h3wQHZTiTlNIPOh3YtbIBl-x3Xn/view?usp=sharing)

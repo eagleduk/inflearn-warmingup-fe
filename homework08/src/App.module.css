@@ -1,0 +1,102 @@
+.body {
+  width: 85vw;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.btn {
+  background-color: rgba(0, 139, 139, 0.6);
+  color: whitesmoke;
+  border-width: 0;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: rgba(0, 139, 139, 0.8);
+}
+
+.btn svg {
+  width: 16px;
+  margin-left: 4px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: aliceblue;
+  padding: 40px 20px;
+}
+
+.content__inputs {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+}
+
+.content__input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  color: chocolate;
+}
+
+.content__input input {
+  border-width: 0;
+  border-bottom-width: 2px;
+  padding: 12px 8px;
+  font-size: 16px;
+}
+
+.content__input input:focus {
+  outline-width: 0;
+  background-color: antiquewhite;
+}
+
+.content__budgets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content__budgets li {
+  display: flex;
+  padding: 12px 8px;
+  border: 1px solid slategrey;
+  border-radius: 4px;
+  margin: 4px 0;
+}
+
+.content__budgets li:hover {
+  transform: scale(1.03);
+  background-color: cornflowerblue;
+  color: whitesmoke;
+}
+
+.content__budgets span {
+  display: block;
+  width: 100%;
+}
+
+.content__budgets div {
+  display: flex;
+  gap: 5px;
+}
+
+.content__budgets button {
+  width: 24px;
+  border-width: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.total {
+  margin-top: 8px;
+  text-align: right;
+  font-size: 24px;
+}
