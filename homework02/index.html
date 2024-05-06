@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork 2</title>
+
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+    <h1>가위 바위 보</h1>
+
+    <div class="status-board">
+        <div>
+            <h3>Win</h3>
+            <span id="win">0</span>
+        </div>
+        <div>
+            <h3>Draw</h3>
+            <span id="draw">0</span>
+        </div>
+        <div>
+            <h3>Lose</h3>
+            <span id="lose">0</span>
+        </div>
+    </div>
+
+    <div class="round-board">
+        남은 횟수: <span id="round">10</span>
+    </div>
+
+    <div class="game-board">
+        <button type="button" data-type="scissors">가위</button>
+        <button type="button" data-type="rock">바위</button>
+        <button type="button" data-type="paper">보</button>
+    </div>
+
+    <div class="gameover-board" style="display: none;">
+        <p>You <span></span></p>
+        <button data-type="restart">
+            다시하기
+        </button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
