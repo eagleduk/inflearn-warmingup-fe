@@ -1,0 +1,99 @@
+.item {
+  cursor: pointer;
+  padding: 18px;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.item section {
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.item img {
+  width: 80%;
+}
+
+.item div {
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.item.grass div {
+  background-color: var(--color-type-grass-background);
+  color: var(--color-type-grass-text);
+}
+
+.item.fire div {
+  background-color: var(--color-type-fire-background);
+  color: var(--color-type-fire-text);
+}
+
+.item.water div {
+  background-color: var(--color-type-water-background);
+  color: var(--color-type-water-text);
+}
+
+.item.bug div {
+  background-color: var(--color-type-bug-background);
+  color: var(--color-type-bug-text);
+}
+
+.item.normal div {
+  background-color: var(--color-type-normal-background);
+  color: var(--color-type-normal-text);
+}
+
+.item.poison div {
+  background-color: var(--color-type-poison-background);
+  color: var(--color-type-poison-text);
+}
+
+.item.electric div {
+  background-color: var(--color-type-electric-background);
+  color: var(--color-type-electric-text);
+}
+
+.item.ground div {
+  background-color: var(--color-type-ground-background);
+  color: var(--color-type-ground-text);
+}
+
+.item.fairy div {
+  background-color: var(--color-type-fairy-background);
+  color: var(--color-type-fairy-text);
+}
+
+.item.fighting div {
+  background-color: var(--color-type-fighting-background);
+  color: var(--color-type-fighting-text);
+}
+
+.item.psychic div {
+  background-color: var(--color-type-psychic-background);
+  color: var(--color-type-psychic-text);
+}
+
+.item.rock div {
+  background-color: var(--color-type-rock-background);
+  color: var(--color-type-rock-text);
+}
+
+.item.ghost div {
+  background-color: var(--color-type-ghost-background);
+  color: var(--color-type-ghost-text);
+}
+
+.item.ice div {
+  background-color: var(--color-type-ice-background);
+  color: var(--color-type-ice-text);
+  color: black;
+}
+
+.item.dragon div {
+  background-color: var(--color-type-dragon-background);
+  color: var(--color-type-dragon-text);
+}

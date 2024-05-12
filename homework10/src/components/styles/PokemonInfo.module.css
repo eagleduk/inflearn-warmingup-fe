@@ -1,0 +1,180 @@
+.content {
+  text-align: center;
+  background-color: midnightblue;
+  color: whitesmoke;
+  width: 80vw;
+  min-width: 650px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+
+  &:has(span.grass:first-child) .content__header,
+  &:has(span.grass) span.grass {
+    background-color: var(--color-type-grass-background);
+    color: var(--color-type-grass-text);
+  }
+  &:has(span.fire:first-child) .content__header,
+  &:has(span.fire) span.fire {
+    background-color: var(--color-type-fire-background);
+    color: var(--color-type-fire-text);
+  }
+
+  &:has(span.water:first-child) .content__header,
+  &:has(span.water) span.water {
+    background-color: var(--color-type-water-background);
+    color: var(--color-type-water-text);
+  }
+
+  &:has(span.bug:first-child) .content__header,
+  &:has(span.bug) span.bug {
+    background-color: var(--color-type-bug-background);
+    color: var(--color-type-bug-text);
+  }
+
+  &:has(span.normal:first-child) .content__header,
+  &:has(span.normal) span.normal {
+    background-color: var(--color-type-normal-background);
+    color: var(--color-type-normal-text);
+  }
+
+  &:has(span.poison:first-child) .content__header,
+  &:has(span.poison) span.poison {
+    background-color: var(--color-type-poison-background);
+    color: var(--color-type-poison-text);
+  }
+
+  &:has(span.ground:first-child) .content__header,
+  &:has(span.ground) span.ground {
+    background-color: var(--color-type-ground-background);
+    color: var(--color-type-ground-text);
+  }
+
+  &:has(span.fairy:first-child) .content__header,
+  &:has(span.fairy) span.fairy {
+    background-color: var(--color-type-fairy-background);
+    color: var(--color-type-fairy-text);
+  }
+
+  &:has(span.fighting:first-child) .content__header,
+  &:has(span.fighting) span.fighting {
+    background-color: var(--color-type-fighting-background);
+    color: var(--color-type-fighting-text);
+  }
+
+  &:has(span.psychic:first-child) .content__header,
+  &:has(span.psychic) span.psychic {
+    background-color: var(--color-type-psychic-background);
+    color: var(--color-type-psychic-text);
+  }
+
+  &:has(span.rock:first-child) .content__header,
+  &:has(span.rock) span.rock {
+    background-color: var(--color-type-rock-background);
+    color: var(--color-type-rock-text);
+  }
+
+  &:has(span.ghost:first-child) .content__header,
+  &:has(span.ghost) span.ghost {
+    background-color: var(--color-type-ghost-background);
+    color: var(--color-type-ghost-text);
+  }
+
+  &:has(span.ice:first-child) .content__header,
+  &:has(span.ice) span.ice {
+    background-color: var(--color-type-ice-background);
+    color: var(--color-type-ice-text);
+  }
+
+  &:has(span.dragon:first-child) .content__header,
+  &:has(span.dragon) span.dragon {
+    background-color: var(--color-type-dragon-background);
+    color: var(--color-type-dragon-text);
+  }
+}
+
+.content__header {
+  width: 100%;
+  text-align: left;
+  min-height: 200px;
+
+  button {
+    border-width: 0;
+    background-color: transparent;
+    margin: 15px;
+    color: inherit;
+    cursor: pointer;
+
+    span {
+      font-weight: bolder;
+      font-size: 26px;
+      color: inherit;
+    }
+  }
+}
+
+.content__main {
+  height: 100%;
+  & > div {
+    transform: translateY(-150px);
+  }
+  img {
+    margin-bottom: 15px;
+  }
+
+  .content__target__type {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    color: whitesmoke;
+    margin-bottom: 15px;
+
+    span {
+      display: block;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  }
+  .content__target__information {
+    margin-bottom: 15px;
+    div {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 5px;
+      align-items: center;
+      p {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .content__target__stats {
+    margin-bottom: 25px;
+
+    div {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      margin: 0 auto;
+      width: 70%;
+      margin-bottom: 5px;
+
+      p {
+        text-transform: uppercase;
+        margin-right: 10px;
+      }
+
+      progress {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .content__target__description {
+    h2 {
+      margin-bottom: 15px;
+    }
+  }
+}

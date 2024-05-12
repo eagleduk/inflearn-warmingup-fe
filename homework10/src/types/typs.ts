@@ -21,4 +21,19 @@ export type Pokemon = {
       };
     };
   };
+  types: { slot: number; type: PokemonListTargetResponse }[];
+  stats: {
+    base_stat: string;
+    effort: number;
+    stat: PokemonListTargetResponse;
+  }[];
+  abilities: { ability: PokemonListTargetResponse }[];
+};
+
+export type Pokemon_Species = {
+  flavor_text_entries: {
+    flavor_text: string;
+    language: PokemonListTargetResponse;
+    version: PokemonListTargetResponse;
+  }[];
 };

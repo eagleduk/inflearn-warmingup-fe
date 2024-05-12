@@ -1,5 +1,7 @@
+import classes from "./styles/PokemonCards.module.css";
+
 import { PokemonListTargetResponse } from "../types/typs";
-import Card from "./Card";
+import PokemonCard from "./PokemonCard";
 
 export default function PokemonCards({
   pokemons,
@@ -9,15 +11,15 @@ export default function PokemonCards({
   onSelect: (name: string) => void;
 }) {
   return (
-    <>
+    <ul className={classes.lists}>
       {pokemons.map((pokemon) => (
-        <Card
+        <PokemonCard
           key={pokemon.name}
           name={pokemon.name}
           url={pokemon.url}
           onSelect={onSelect}
         />
       ))}
-    </>
+    </ul>
   );
 }

@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
+
+import classes from "./styles/PokemonCard.module.css";
+
 import { Pokemon } from "../types/typs";
 
-export default function Card({
+export default function PokemonCards({
   name,
   url,
   onSelect,
@@ -25,13 +28,21 @@ export default function Card({
     return null;
   }
 
+  const firstType = pokemon.types[0].type.name;
+
   return (
-    <section onClick={() => onSelect(name)}>
-      <img
-        src={pokemon.sprites.other["official-artwork"].front_default}
-        alt={name}
-      />
-      <div>{name}</div>
-    </section>
+    <li
+      className={`${classes.item} ${classes[firstType]}`}
+      onClick={() => onSelect(name)}
+      data-first-type={firstType}
+    >
+      <section>
+        <img
+          src={pokemon.sprites.other["official-artwork"].front_default}
+          alt={name}
+        />
+        <div>{name}</div>
+      </section>
+    </li>
   );
 }

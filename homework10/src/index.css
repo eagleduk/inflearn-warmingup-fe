@@ -1,13 +1,61 @@
+:root {
+  --color-type-grass-background: green;
+  --color-type-grass-text: inherit;
+  --color-type-fire-background: brown;
+  --color-type-fire-text: inherit;
+  --color-type-water-background: dodgerblue;
+  --color-type-water-text: inherit;
+  --color-type-bug-background: steelblue;
+  --color-type-bug-text: inherit;
+  --color-type-normal-background: slategray;
+  --color-type-normal-text: inherit;
+  --color-type-poison-background: gold;
+  --color-type-poison-text: inherit;
+  --color-type-ground-background: darkgoldenrod;
+  --color-type-ground-text: inherit;
+  --color-type-fairy-background: lightpink;
+  --color-type-fairy-text: inherit;
+  --color-type-fighting-background: darkblue;
+  --color-type-fighting-text: inherit;
+  --color-type-psychic-background: coral;
+  --color-type-psychic-text: inherit;
+  --color-type-rock-background: cornflowerblue;
+  --color-type-rock-text: inherit;
+  --color-type-ghost-background: darkmagenta;
+  --color-type-ghost-text: inherit;
+  --color-type-ice-background: cyan;
+  --color-type-ice-text: black;
+  --color-type-dragon-background: cadetblue;
+  --color-type-dragon-text: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+html {
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: antiquewhite;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
 }

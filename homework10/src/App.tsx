@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
-import "./App.css";
+
+import classes from "./App.module.css";
+
 import { PokemonListResponse, PokemonListTargetResponse } from "./types/typs";
-import Card from "./components/Card";
 import PokemonCards from "./components/PokemonCards";
+import PokemonInfo from "./components/PokemonInfo";
+import Modal from "./components/ui/Modal";
 
 const LIMIT = 20;
 
@@ -15,6 +18,7 @@ async function getPokemonLists(url: string) {
 
 function App() {
   const [selected, setSelected] = useState<null | string>(null);
+  const [keyword, setKeyword] = useState("");
 
   const [pokemons, setPokemons] = useState<PokemonListTargetResponse[]>([]);
   const [next, setNext] = useState<string | null>(null);
@@ -43,21 +47,28 @@ function App() {
     setSelected(null);
   }
 
-  if (selected) {
-    return (
-      <div>
-        <button onClick={handleRemoveSelectedPokemon}>back</button>
-        <h1>Selected!!</h1>
-      </div>
-    );
-  }
+  const filteredPokemon = pokemons.filter(
+    (pokemon) => pokemon.name.indexOf(keyword) > -1
+  );
 
   return (
-    <div className="App">
+    <div className={classes.App}>
+      <Modal isOpen={Boolean(selected)} onClose={handleRemoveSelectedPokemon}>
+        {selected ? (
+          <PokemonInfo onBack={handleRemoveSelectedPokemon} name={selected} />
+        ) : (
+          <></>
+        )}
+      </Modal>
       <div>
-        <input type="text" />
+        <input
+          type="text"
+          value={keyword}
+          onChange={(event) => setKeyword(event.target.value)}
+          placeholder="Input Pokemon Name"
+        />
       </div>
-      <PokemonCards pokemons={pokemons} onSelect={handleSelectPokemon} />
+      <PokemonCards pokemons={filteredPokemon} onSelect={handleSelectPokemon} />
       {next && <button onClick={handleNextEvent}>Next</button>}
     </div>
   );
