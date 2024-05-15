@@ -1,3 +1,6 @@
 # 음식 메뉴
 
-<video controls src="01. 음식메뉴.mp4" title="Title"></video>
+
+### 동작 시연
+
+https://github.com/eagleduk/inflearn-warmingup-fe/assets/33012310/3765eabe-dddc-4b96-9218-fdf9d8339ec6
